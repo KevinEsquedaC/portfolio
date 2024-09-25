@@ -1,0 +1,9 @@
+body {
+  --LigthGray: #242424;
+  --White: #FFFFFF;
+
+  color: var(--White);
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--LigthGray);
+}
+
