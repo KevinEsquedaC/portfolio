@@ -1,5 +1,10 @@
+// Importaciones React y MUI
+import { useState } from "react";
+import Grid from "@mui/material/Grid";
+
 // Importación de componentes
-import NavigationBar from "./components/general/NavigationBar";
+import SideBar from "./components/general/SideBar";
+
 
 /**
  * @function App
@@ -8,10 +13,22 @@ import NavigationBar from "./components/general/NavigationBar";
  */
 function App() {
 
+  const [openSideBar, setOpenSideBar] = useState(false);
+
+  function handleOpenMenu() {
+    setOpenSideBar(!openSideBar)
+  };
+
   return (
-    <div style={{padding: '8px'}}>
-      <NavigationBar />
-      <h1>Hola mundo!!!</h1>
+    <div>
+      <Grid container sx={{ height: '100vh' }}>
+        <Grid item lg={openSideBar ? 2 : 0.5} sx={{ transition: 'all 0.5s' }}>
+          <SideBar handleOpenMenu={handleOpenMenu} openSideBar={openSideBar} />
+        </Grid>
+        <Grid item lg={openSideBar ? 10 : 11.5} sx={{ overflowY: 'hidden', transition: 'all 0.5s' }}>
+
+        </Grid>
+      </Grid>
     </div>
   );
 };

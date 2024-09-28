@@ -7,5 +7,5 @@
 ## NPM utilizados:
 - `npm i env-cmd`
 - `npm i framer-motion`
-- `npm i @mui/material @emotion/react @emotion/styled`
 - `npm I @mui/icons-material`
+- `npm i @mui/material @emotion/react @emotion/styled`
