@@ -12,7 +12,7 @@ import MiniProyectsCatalog from "./MiniProyectsCatalog";
  */
 const Body = () => {
   return (
-    <div style={{ height: '80vh' }}>
+    <div style={{ height: '100vh' }}>
       <div style={{ width: '100%', display: 'flex', justifyContent: 'end' }}>
         <Reveal width="fit-content">
           <Typography variant="h2" sx={{ width: '100%', fontWeight: 'bold' }}>Índice</Typography>

@@ -8,6 +8,8 @@ import CardContent from "@mui/material/CardContent";
 
 // Importación de tipos
 import { MiniProyectCatalogType } from "../../../types/MiniProyectCatalogType";
+
+// Importación de funciones
 import Reveal from "../../../functions/general/Reveal";
 
 /**
@@ -17,6 +19,10 @@ import Reveal from "../../../functions/general/Reveal";
  */
 const MiniProyectsCatalog = () => {
 
+  /**
+   * @constant miniProyectsArray
+   * @description Arreglo que contiene todos los mini proyectos.
+   */
   const miniProyectsArray = [
     { id: 1, title: "Calculadora", desc: "Calculadora funcional" },
     { id: 1, title: "Calculadora", desc: "Calculadora funcional" },
