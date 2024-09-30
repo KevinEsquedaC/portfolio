@@ -12,7 +12,7 @@ import Reveal from "../../../functions/general/Reveal";
 const Title = () => {
   return (
     <div style={{ height: '100vh', alignItems: 'center', display: 'flex' }}>
-      <div style={{}}>
+      <div>
         <Reveal>
           <Typography variant="h1" sx={{ fontWeight: 'bold' }}>Hola Mundo!!!</Typography>
         </Reveal>
