@@ -5,6 +5,7 @@ import { motion, useAnimation, useInView } from "framer-motion";
 // Props
 interface Props {
   children: JSX.Element
+  width?: "fit-content" | "100%"
 };
 
 /**
@@ -12,7 +13,7 @@ interface Props {
  * @param {JSX.Element} children Elemento al cual se le aplicará la animación.
  * @returns Animación aplicada en el elemento dado.
  */
-const Reveal = ({ children }: Props) => {
+const Reveal = ({ children, width }: Props) => {
 
   const ref = useRef(null);
   const mainControls = useAnimation();
@@ -30,7 +31,7 @@ const Reveal = ({ children }: Props) => {
   }, [isInView]);
 
   return (
-    <div ref={ref} style={{ position: 'relative', width: "fit-content" }}>
+    <div ref={ref} style={{ position: 'relative', width: width }}>
       <motion.div variants={{
         hidden: { opacity: 0, y: 10 },
         visible: { opacity: 1, y: 0 }

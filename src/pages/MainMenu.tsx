@@ -1,4 +1,5 @@
 // Importación de componentes
+import Body from "../components/views/mainMenu/Body";
 import Title from "../components/views/mainMenu/Title";
 
 /**
@@ -9,8 +10,10 @@ import Title from "../components/views/mainMenu/Title";
 const MainMenu = () => {
 
   return (
-    <div style={{ paddingInlineStart: 50 }}>
+    <div style={{ paddingInline: 50 }}>
       <Title />
+      <br />
+      <Body />
     </div>
   );
 };
