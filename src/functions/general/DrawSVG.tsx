@@ -9,7 +9,7 @@ const DrawSVG = {
     opacity: 0
   },
   visible: (i: any) => {
-    const delay = 1 + i * 0.5;
+    const delay = 0.25 + i * 0.3;
     return {
       opacity: 1,
       pathLength: 1,

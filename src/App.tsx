@@ -4,6 +4,7 @@ import Grid from "@mui/material/Grid";
 
 // Importación de componentes
 import SideBar from "./components/general/SideBar";
+import MainMenu from "./pages/MainMenu";
 
 
 /**
@@ -26,7 +27,7 @@ function App() {
           <SideBar handleOpenMenu={handleOpenMenu} openSideBar={openSideBar} />
         </Grid>
         <Grid item lg={openSideBar ? 10 : 11.5} sx={{ overflowY: 'hidden', transition: 'all 0.5s' }}>
-
+          <MainMenu />
         </Grid>
       </Grid>
     </div>
