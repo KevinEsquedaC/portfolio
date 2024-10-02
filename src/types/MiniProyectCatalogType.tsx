@@ -1,5 +1,6 @@
 export type MiniProyectCatalogType = {
   id: number,
   title: string,
-  desc: string
+  desc: string,
+  url: string
 }
