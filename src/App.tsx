@@ -20,7 +20,7 @@ function App() {
   const [openSideBar, setOpenSideBar] = useState(false);
 
   function handleOpenMenu() {
-    setOpenSideBar(!openSideBar)
+    setOpenSideBar(!openSideBar);
   };
 
   return (
@@ -29,7 +29,7 @@ function App() {
         <Grid item sm={1} md={0.5}>
           <SideBar handleOpenMenu={handleOpenMenu} openSideBar={openSideBar} />
         </Grid>
-        <Grid item sm={11} md={11.5} sx={{ overflowY: 'auto', zIndex: openSideBar ? 20 : 40, transition: 'all 0.5s ease' }}>
+        <Grid item sm={11} md={11.5} sx={{ overflowY: 'auto', zIndex: openSideBar ? 20 : 40, transition: 'all 0.5s ease', width: '100%' }}>
           <BrowserRouter>
             <Routes>
               <Route path="/" element={<MainMenu />} />

@@ -1,3 +1,6 @@
+// Importaciones MUI
+import Box from "@mui/material/Box";
+
 // Importación de componentes
 import Body from "../components/views/calculator/Body";
 
@@ -8,9 +11,9 @@ import Body from "../components/views/calculator/Body";
  */
 const Calculator = () => {
   return (
-    <div style={{ paddingInline: 50 }}>
+    <Box sx={{ pr: { md: '50px' }, pl: { xs: '50px' } }}>
       <Body />
-    </div>
+    </Box>
   );
 };
 
