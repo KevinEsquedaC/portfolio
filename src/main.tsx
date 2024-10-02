@@ -5,6 +5,9 @@ import { createRoot } from 'react-dom/client'
 // Importación de componentes
 import App from './App.tsx'
 
+// Importación de traducción
+import './languages/config.tsx';
+
 // Importación de estilos
 import './themes/DarkModeTheme.css'
 

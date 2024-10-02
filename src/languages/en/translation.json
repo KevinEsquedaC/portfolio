@@ -1,0 +1,26 @@
+{
+  "sideBar": {
+    "buttonES": "Spanish",
+    "buttonEN": "English"
+  },
+  "mainMenu": {
+    "title": {
+      "title": "Hello World!!!",
+      "welcome": "Welcome to the main page of this project.",
+      "desc1": "In this project I'm going to make tests of React, Material UI, Framer Motion and more.",
+      "desc2": "This is to be able to learn more about the functioning and behavior of certain components in an interactive way, playing with the elements and animations that I can use."
+    },
+    "body": {
+      "miniProjects": {
+        "title": {
+          "title": "Mini-Projects",
+          "desc": "Preview of mini-projects"
+        }
+      }
+    }
+  },
+  "calculator": {
+    "title": "Calculator",
+    "desc": "This mini project shows a functional calculator."
+  }
+}

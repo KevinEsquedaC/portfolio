@@ -1,6 +1,6 @@
 // Importaciones React y MUI
-import Grid from "@mui/material/Grid";
 import { useState } from "react";
+import Grid from "@mui/material/Grid";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 // Importación de componentes
@@ -9,7 +9,6 @@ import SideBar from "./components/general/SideBar";
 // Importación de vistas
 import MainMenu from "./pages/MainMenu";
 import Calculator from "./pages/Calculator";
-
 
 /**
  * @function App
@@ -34,7 +33,7 @@ function App() {
           <BrowserRouter>
             <Routes>
               <Route path="/" element={<MainMenu />} />
-              <Route path="/" element={<Calculator />} />
+              <Route path="/calculator" element={<Calculator />} />
             </Routes>
           </BrowserRouter>
         </Grid>

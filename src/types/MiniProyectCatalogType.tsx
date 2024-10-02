@@ -1,6 +1,12 @@
 export type MiniProyectCatalogType = {
   id: number,
-  title: string,
-  desc: string,
+  es: {
+    title: string,
+    desc: string,
+  },
+  en: {
+    title: string,
+    desc: string,
+  }
   url: string
 }

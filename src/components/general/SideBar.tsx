@@ -1,7 +1,9 @@
-// Importaciones Framer Motion y MUI
+// Importaciones Framer Motion, MUI y i18next
 import Grid from "@mui/material/Grid";
 import { motion } from "framer-motion";
 import Stack from "@mui/material/Stack";
+import Button from "@mui/material/Button";
+import { useTranslation } from "react-i18next";
 
 // Importación de funciones
 import DrawSVG from "../../functions/general/DrawSVG";
@@ -19,6 +21,16 @@ interface SideBarProps {
  */
 const SideBar = ({ handleOpenMenu, openSideBar }: SideBarProps) => {
 
+  const { t, i18n } = useTranslation();
+
+  /**
+   * @constant changeLanguage 
+   * @param {string} lng Indica el leguaje utilizado.
+   */
+  const changeLanguage = (lng: string) => {
+    i18n.changeLanguage(lng);
+  };
+
   return (
     <Grid container sx={{ height: '100vh', zIndex: 30, position: 'fixed' }}>
       <Grid item sm={openSideBar ? 4 : 1} md={openSideBar ? 2 : 0.5} sx={{ transition: 'all 0.5s' }}>
@@ -33,7 +45,11 @@ const SideBar = ({ handleOpenMenu, openSideBar }: SideBarProps) => {
             </motion.div>
             {
               openSideBar
-                ? <></>
+                ?
+                <>
+                  <Button onClick={() => changeLanguage('es')}>{t('sideBar.buttonES')}</Button>
+                  <Button onClick={() => changeLanguage('en')}>{t('sideBar.buttonEN')}</Button>
+                </>
                 : <motion.div style={{ width: "40px", height: "100px" }} transition={{ duration: 0.3 }}>
                   <motion.svg width="40" height="150" viewBox="0 0 45 165" initial="hidden" animate="visible" stroke={"#FFFFFF"} whileHover={{ stroke: "#006aff" }}>
 
