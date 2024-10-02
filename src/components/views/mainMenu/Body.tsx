@@ -15,7 +15,7 @@ const Body = () => {
     <div style={{ height: '100vh' }}>
       <div style={{ width: '100%', display: 'flex', justifyContent: 'end' }}>
         <Reveal width="fit-content">
-          <Typography variant="h2" sx={{ width: '100%', fontWeight: 'bold' }}>Índice</Typography>
+          <Typography variant="h3" className="glowSubtitle" sx={{ width: '100%', fontWeight: 'bold' }}>Índice</Typography>
         </Reveal>
       </div>
       <div style={{ width: '100%', display: 'flex', justifyContent: 'end' }}>
