@@ -14,7 +14,7 @@ const Title = () => {
     <div style={{ height: '100vh', alignItems: 'center', display: 'flex' }}>
       <div>
         <Reveal width="fit-content">
-          <Typography variant="h1" sx={{ fontWeight: 'bold' }}>Hola Mundo!!!</Typography>
+          <Typography variant="h1" className="glowTitle" sx={{ fontWeight: 'bold' }}>Hola Mundo!!!</Typography>
         </Reveal>
         <Reveal width="fit-content">
           <Typography variant="h4">Bienvenido a la página principal de este proyecto.</Typography>
