@@ -25,15 +25,13 @@ const MiniProyectsCatalog = () => {
    */
   const miniProyectsArray = [
     { id: 1, title: "Calculadora", desc: "Calculadora funcional" },
-    { id: 1, title: "Calculadora", desc: "Calculadora funcional" },
-    { id: 1, title: "Calculadora", desc: "Calculadora funcional" },
-  ]
+  ];
 
   return (
     <div>
       <Grid container sx={{ width: '100%' }} spacing={2}>
         {miniProyectsArray.map((proyect: MiniProyectCatalogType) =>
-          <Grid key={proyect.id} item md={4}>
+          <Grid key={proyect.id} item xs={12} sm={6} md={4} xl={3}>
             <Reveal>
               <Card sx={{ "&:hover": { cursor: "pointer", transform: "scale(1.05)" }, transition: "all 0.5s" }}>
                 <CardMedia sx={{ height: 140 }} />

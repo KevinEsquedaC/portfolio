@@ -25,10 +25,10 @@ function App() {
   return (
     <div>
       <Grid container sx={{ maxHeight: '100vh', width: '100%' }}>
-        <Grid item md={0.5}>
+        <Grid item sm={1} md={0.5}>
           <SideBar handleOpenMenu={handleOpenMenu} openSideBar={openSideBar} />
         </Grid>
-        <Grid item md={11.5} sx={{ overflowY: 'auto', zIndex: openSideBar ? 20 : 40, transition: 'all 0.5s ease' }}>
+        <Grid item sm={11} md={11.5} sx={{ overflowY: 'auto', zIndex: openSideBar ? 20 : 40, transition: 'all 0.5s ease' }}>
           <MainMenu />
         </Grid>
       </Grid>

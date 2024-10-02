@@ -21,7 +21,7 @@ const SideBar = ({ handleOpenMenu, openSideBar }: SideBarProps) => {
 
   return (
     <Grid container sx={{ height: '100vh', zIndex: 30, position: 'fixed' }}>
-      <Grid item md={openSideBar ? 2 : 0.5} sx={{ transition: 'all 0.5s' }}>
+      <Grid item sm={openSideBar ? 4 : 1} md={openSideBar ? 2 : 0.5} sx={{ transition: 'all 0.5s' }}>
         <div style={{ backdropFilter: 'blur(30px)', boxShadow: '0px 0px 20px rgba(20, 110, 255, 0.30)', height: '100%' }}>
           <Stack sx={{ width: '100%', display: 'flex', alignItems: openSideBar ? 'end' : 'center' }}>
             <motion.div style={{ width: "40px", height: "40px" }} onClick={handleOpenMenu} transition={{ duration: 0.3 }}>
@@ -61,7 +61,7 @@ const SideBar = ({ handleOpenMenu, openSideBar }: SideBarProps) => {
           </Stack>
         </div>
       </Grid>
-      <Grid item md={openSideBar ? 10 : 11.5} sx={{ transition: 'all 0.5s' }} />
+      <Grid item sm={openSideBar ? 8 : 11} md={openSideBar ? 10 : 11.5} sx={{ transition: 'all 0.5s' }} />
     </Grid>
   );
 };

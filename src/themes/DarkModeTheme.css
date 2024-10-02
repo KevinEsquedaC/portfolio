@@ -1,9 +1,58 @@
 body {
-  --LigthGray: #242424;
+  --Gray: #242424;
+  --LigthGray: #898989;
+  --Dark: #000000;
   --White: #FFFFFF;
+  --Blue: #0062ff;
+  --LigthBlue: #1f73f9;
 
   color: var(--White);
   font-family: Arial, Helvetica, sans-serif;
-  background-color: var(--LigthGray);
+  background-color: var(--Gray);
 }
 
+.glowTitle {
+  animation: glow 3s ease-in-out;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: var(--White);
+  text-shadow: 0 0 8px var(--White), 0 0 20px var(--Blue), 0 0 30px var(--Blue), 0 0 40px var(--Blue), 0 0 50px var(--Blue);
+}
+
+@keyframes glow {
+
+  0% {
+    text-shadow: none;
+    color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: var(--LigthGray);
+  }
+
+  25% {
+    text-shadow: none;
+    color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: var(--LigthGray);
+  }
+
+
+  50% {
+    color: var(--White);
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: var(--White);
+    text-shadow: 0 0 10px var(--White), 0 0 15px var(--White), 0 0 20px var(--LigthBlue), 0 0 40px var(--LigthBlue), 0 0 60px var(--Blue);
+  }
+
+  75% {
+    color: var(--White);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--White);
+    text-shadow: 0 0 10px var(--White), 0 0 15px var(--White), 0 0 20px var(--LigthBlue), 0 0 40px var(--LigthBlue), 0 0 60px var(--Blue);
+  }
+
+  100% {
+    color: var(--White);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--White);
+    text-shadow: 0 0 8px var(--White), 0 0 20px var(--Blue), 0 0 30px var(--Blue), 0 0 40px var(--Blue), 0 0 50px var(--Blue);
+  }
+}
