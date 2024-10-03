@@ -25,7 +25,7 @@ const Body = () => {
             <Typography variant="body1" sx={{ textAlign: { xs: 'center', md: 'justify' } }}>{t("calculator.desc")}</Typography>
           </Stack>
         </Grid>
-        <Grid item xs={12} md={7} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+        <Grid item xs={12} md={7} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: { xs: '80%', md: '100%' } }}>
           <Calculator />
         </Grid>
       </Grid>

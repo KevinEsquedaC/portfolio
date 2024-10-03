@@ -11,9 +11,9 @@ import Body from "../components/views/calculator/Body";
  */
 const Calculator = () => {
   return (
-    <Box sx={{ pr: { md: '50px' }, pl: { xs: '50px' } }}>
+    <Box sx={{ pr: { md: '50px' }, pl: { xs: '50px' }, m: 0 }} >
       <Body />
-    </Box>
+    </Box >
   );
 };
 
